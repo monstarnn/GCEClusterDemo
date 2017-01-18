@@ -7,7 +7,7 @@ instances:
     labels:
       type: db
       type: es
-    instance_type: m3.large
+    instance_type: m3.medium
     volumes:
       - DeviceName: /dev/xvda
         Ebs:
