@@ -1,4 +1,4 @@
 - Account: aws.json
   Name: db-tests-cirrus
-  Provider: aws
+  Provider: amazon
   Src: master.yaml
