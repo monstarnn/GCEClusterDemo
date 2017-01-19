@@ -15,4 +15,4 @@
       clusters:
         - master
       configuration:
-        file: reference to values1
+        file: reference to values2
