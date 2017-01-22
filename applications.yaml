@@ -10,6 +10,10 @@
         file: reference to values
         values:
           p1: test
+          image:
+            image: test
+            tag: 4.4.5
+            tagUpdate: minor
     - name: kuberlab
       src: dev.kuberlab.io/kuberlab/kuberlab
       clusters:
