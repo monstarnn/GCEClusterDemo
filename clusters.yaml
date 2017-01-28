@@ -1,7 +1,7 @@
 - Account: seventh-seeker-155107
-  Name: master-test-2
+  Name: master-test
   Provider: google
-  Src: master-test-2.yaml
+  Src: master-test.yaml
   Status: Undefined
 - Account: seventh-seeker-155107
   Name: test1
