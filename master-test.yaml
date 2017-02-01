@@ -16,6 +16,7 @@ instances:
     count: 1
     labels:
       type: db
+      test: yes
     instance_type: n1-standard-2
     volumes:
       - boot: true
