@@ -5,7 +5,7 @@ instances:
     count: 1
     labels:
       type: front
-      class: fast
+      class: fast1
     instance_type: n1-standard-2
     volumes:
       - boot: true
@@ -16,7 +16,7 @@ instances:
     count: 1
     labels:
       type: db
-      test: ok
+      test: ok1
     instance_type: n1-standard-2
     volumes:
       - boot: true
