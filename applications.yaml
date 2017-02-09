@@ -2,7 +2,7 @@
   charts:
     - name: demo-web-server
       src: https://github.com/kuberlab/demo-web-server.git
-      version: *
+      version: "*"
       clusters:
         - master-test
       configuration:
