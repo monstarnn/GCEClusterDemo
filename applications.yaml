@@ -1,48 +1,21 @@
 - name: kuberlab
   charts:
-    - name: elastic
-      src: dev.kuberlab.io/kuberlab/elastic
-      version: ^1.2.3
+    - name: demo-web-server
+      src: https://github.com/kuberlab/demo-web-server.git
+      version: *
       clusters:
-        - master
-        - slave
+        - master-test
       configuration:
-        file: reference to values
         values:
-          Image: test
-          p1: test
-    - name: elasticsearch
-      src: dev.kuberlab.io/kuberlab/kuberlab
-      clusters:
-        - master
-      configuration:
-        file: reference to values
-        values:
-          Name: es
-          Component: "elasticsearch"
+          Name: demo
+          Component: demo-server
+          ServerVersion: 1.1.0
+          Replicas: 2
+          CpuRequests: "25m"
+          MemoryRequests: "64Mi"
+          CpuLimits: "100m"
+          MemoryLimits: "64Mi"
           Image:
-            Name: "jetstack/elasticsearch-pet"
-            Version: "^2.3.5"
-          ImagePullPolicy: "Always"
-          ClientReplicas: 2
-          ClientCpuRequests: "25m"
-          ClientMemoryRequests: "256Mi"
-          ClientCpuLimits: "100m"
-          ClientMemoryLimits: "512Mi"
-          ClientHeapSize: "128m"
-          MasterReplicas: 2
-          MasterCpuRequests: "25m"
-          MasterMemoryRequests: "256Mi"
-          MasterCpuLimits: "100m"
-          MasterMemoryLimits: "512Mi"
-          MasterHeapSize: "128m"
-          DataReplicas: 3
-          DataCpuRequests: "250m"
-          DataMemoryRequests: "2Gi"
-          DataCpuLimits: "1"
-          DataMemoryLimits: "4Gi"
-          DataHeapSize: "1536m"
-          DataStorage: "30Gi"
-          DataStorageClass: "anything"
-          DataStorageClassVersion: "alpha"
-
+            Name: kuberlab/demo-web-server
+            Tag: latest
+            Current: latest
