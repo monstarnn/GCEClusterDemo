@@ -14,7 +14,7 @@
           Replicas: 2
           CpuRequests: "25m"
           MemoryRequests: "64Mi"
-          CpuLimits: "100m"
+          CpuLimits: "200m"
           MemoryLimits: "64Mi"
           Image:
             Name: kuberlab/demo-web-server
