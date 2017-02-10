@@ -1,7 +1,7 @@
 - name: kuberlab
   charts:
     - name: demo-web-server
-      src: https://github.com/kuberlab/demo-web-server
+      src: https://github.com/kuberlab/demo-web-server/Chart
       version: "*"
       clusters:
         - master-test
