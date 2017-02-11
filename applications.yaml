@@ -20,4 +20,4 @@
             kuberlab.io/image:
               Name: kuberlab/demo-web-server
               Tag: 1.0.0
-              CandidateTag: *
+              CandidateTag: "*"
