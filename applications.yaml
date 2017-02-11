@@ -17,15 +17,7 @@
           CpuLimits: "200m"
           MemoryLimits: "64Mi"
           Image:
-            Name: kuberlab/demo-web-server
-            Tag: latest
-            Current: latest
-          BestImageExample:
             kuberlab.io/image:
               Name: kuberlab/demo-web-server
-              #auto update on commit
-              Tag: 1.1.0
-              CandidateTag: "*"
-          BestImageExampleOut:
-            Name: kuberlab/demo-web-server
-            Tag: 1.1.0
+              Tag: 1.0.0
+              CandidateTag: *
