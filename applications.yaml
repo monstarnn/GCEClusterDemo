@@ -20,6 +20,10 @@
             kuberlab.io/image:
               Name: kuberlab/demo-web-server
               CandidateTag: "*"
+- name: wordpress
+  charts:
     - name: wordpress
       src: https://github.com/kuberlab/wordpress-chart
       version: "*"
+      clusters:
+        - master-test
