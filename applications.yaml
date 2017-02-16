@@ -22,8 +22,8 @@
               CandidateTag: "*"
 - name: wordpress
   charts:
-    - name: wordpress
-      src: https://github.com/kuberlab/wordpress-chart/
+    - name: wordpress-chart
+      src: https://github.com/kuberlab/wordpress-chart
       version: "*"
       clusters:
         - master-test
