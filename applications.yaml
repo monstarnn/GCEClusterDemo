@@ -23,7 +23,7 @@
 - name: wordpress
   charts:
     - name: wordpress-chart
-      src: https://dev.kuberlab.io/kuberlab/wordpress-chart
+      src: https://dev.kuberlab.io/kuberlab/wordpress
       version: "*"
       clusters:
         - master-test
