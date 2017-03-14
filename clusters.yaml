@@ -2,7 +2,7 @@
   Name: master-test ##Cluster name
   Provider: google ##Name of provicer
   Src: master-test.yaml ##Cluster resource description
-- Account: aws
+- Account: 788157744186
   Name: aws
   Provider: amazon
   Src: aws-test.yaml
