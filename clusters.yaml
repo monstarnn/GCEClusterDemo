@@ -2,8 +2,7 @@
   Name: master-test ##Cluster name
   Provider: google ##Name of provicer
   Src: master-test.yaml ##Cluster resource description
-- Account: testcluster-158807
-  Name: test1
-  Provider: google
-  Src: test1.yaml
-  Status: Undefined
+- Account: aws
+  Name: aws
+  Provider: amazon
+  Src: aws-test.yaml

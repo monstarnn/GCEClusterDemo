@@ -1,0 +1,17 @@
+name: "aws"
+zone: us-east-1a
+region: us-east-1
+image_id: ami-03fdf814
+instances:
+  - name: front
+    count: 1
+    labels:
+      type: front
+      class: fast1
+    instance_type: t2.micro
+    volumes:
+      - DeviceName: "/dev/xvda"
+        Ebs:
+          DeleteOnTermination: true
+          VolumeSize: 16
+          VolumeType: gp2
