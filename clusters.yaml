@@ -1,4 +1,4 @@
-- Account: testcluster-158807 ##Accout name that will be use to connect to cloud provider
+- Account: kl-demo-1 ##Accout name that will be use to connect to cloud provider
   Name: master-test ##Cluster name
   Provider: google ##Name of provicer
   Src: master-test.yaml ##Cluster resource description
