@@ -1,29 +1,49 @@
-- name: kuberlab
-  charts:
-    - name: demo-web-server
-      src: https://github.com/kuberlab/demo-web-server/Chart
-      #src: https://dev.kuberlab.io/kuberlab/demo-web-server
-      version: "*"
-      clusters:
-        - master-test
-      configuration:
-        values:
-          Name: demo
-          Component: demo-server
-          ServerVersion: 1.2.0
-          Replicas: 1
-          CpuRequests: "25m"
-          MemoryRequests: "64Mi"
-          CpuLimits: "200m"
-          MemoryLimits: "64Mi"
-          Image:
-            kuberlab.io/image:
-              Name: kuberlab/demo-web-server
-              CandidateTag: "*"
-- name: wordpress
-  charts:
-    - name: wordpress
-      src: https://dev.kuberlab.io/kuberlab/wordpress
-      version: "*"
-      clusters:
-        - master-test
+- charts:
+  - clusters:
+    - master-test
+    configuration:
+      values:
+        Component: demo-server
+        CpuLimits: 200m
+        CpuRequests: 25m
+        Image:
+          kuberlab.io/image:
+            CandidateTag: '*'
+            Name: kuberlab/demo-web-server
+        MemoryLimits: 64Mi
+        MemoryRequests: 64Mi
+        Name: demo
+        Replicas: 1
+        ServerVersion: 1.2.0
+    name: demo-web-server
+    src: https://github.com/kuberlab/demo-web-server/Chart
+    version: '*'
+  name: kuberlab
+- charts:
+  - clusters:
+    - master-test
+    configuration: {}
+    name: wordpress
+    src: https://dev.kuberlab.io/kuberlab/wordpress
+    version: '*'
+  name: wordpress
+- charts:
+  - clusters:
+    - aws
+    configuration:
+      values:
+        Component: demo-server
+        CpuLimits: 100m
+        CpuRequests: 25m
+        Image:
+          Name: kuberlab/demo-web-server
+          Tag: latest
+        MemoryLimits: 64Mi
+        MemoryRequests: 64Mi
+        Name: demo
+        Replicas: 2
+        ServerVersion: 1.1.2
+    name: demo-web-server
+    src: https://github.com/kuberlab/demo-web-server/Chart/
+    version: 2.0.1
+  name: test
