@@ -1,2 +1,8 @@
-- charts: []
+- charts:
+  - clusters:
+    - master-test
+    configuration: {}
+    name: cassandra
+    src: https://github.com/monstarnn/test-repo/cassandra
+    version: 0.2.1
   name: cassandra
