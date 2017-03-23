@@ -140,3 +140,11 @@
     src: https://github.com/lsheiba/charts/stable/minecraft
     version: 0.1.2
   name: ttt
+- charts:
+  - clusters:
+    - master-test
+    configuration: {}
+    name: cassandra
+    src: https://github.com/monstarnn/test-repo/cassandra
+    version: 0.2.1
+  name: cassandra
