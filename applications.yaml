@@ -20,7 +20,7 @@
         MemoryLimits: 64Mi
         MemoryRequests: 64Mi
         Name: k-demo-server
-        Replicas: 1
+        Replicas: 2
     name: orel-server
     src: https://github.com/dreyk/k-server-demo/chart
     version: 1.0.0
