@@ -1,8 +1,10 @@
-- Account: kl-demo-1 ##Accout name that will be use to connect to cloud provider
-  Name: master-test ##Cluster name
-  Provider: google ##Name of provicer
-  Src: master-test.yaml ##Cluster resource description
-- Account: 788157744186
+- Account: keberlab-test
+  MasterIP: ""
+  Name: master-test
+  Provider: google
+  Src: master-test.yaml
+- Account: "788157744186"
+  MasterIP: ""
   Name: aws
   Provider: amazon
   Src: aws-test.yaml
