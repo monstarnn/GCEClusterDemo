@@ -6,3 +6,22 @@
     src: https://github.com/monstarnn/test-repo/cassandra
     version: 0.2.1
   name: cassandra
+- charts:
+  - clusters:
+    - master-test
+    configuration:
+      values:
+        Component: demo-server
+        CpuLimits: 100m
+        CpuRequests: 25m
+        Image:
+          Name: dreyk/k-server-demo
+          Tag: latest
+        MemoryLimits: 64Mi
+        MemoryRequests: 64Mi
+        Name: k-demo-server
+        Replicas: 1
+    name: orel-server
+    src: https://github.com/dreyk/k-server-demo/chart
+    version: 1.0.0
+  name: orel
