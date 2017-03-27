@@ -33,7 +33,7 @@
         CpuRequests: 25m
         Image:
           Name: agunin/k-client-demo
-          Tag: "*"
+          Tag: "1.0.0"
         MemoryLimits: 64Mi
         MemoryRequests: 64Mi
         Name: k-demo-client
