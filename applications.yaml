@@ -24,4 +24,21 @@
     name: orel-server
     src: https://github.com/dreyk/k-server-demo/chart
     version: 1.0.0
+  - clusters:
+    - master-test
+    configuration:
+      values:
+        Component: demo-client
+        CpuLimits: 100m
+        CpuRequests: 25m
+        Image:
+          Name: agunin/k-client-demo
+          Tag: latest
+        MemoryLimits: 64Mi
+        MemoryRequests: 64Mi
+        Name: k-demo-client
+        Replicas: 1
+    name: orel-client
+    src: https://github.com/dreyk/k-client-demo/chart
+    version: 1.0.0
   name: orel
