@@ -15,7 +15,7 @@
         CpuLimits: 100m
         CpuRequests: 25m
         Image:
-          Name: dreyk/k-server-demo
+          Name: agunin/k-server-demo
           Tag: latest
         MemoryLimits: 64Mi
         MemoryRequests: 64Mi
