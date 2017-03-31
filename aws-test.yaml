@@ -1,14 +1,19 @@
 name: "aws"
 zone: us-east-1a
 region: us-east-1
-image_id: ami-03fdf814
+master_type: m3.medium
+replication_zones:
+  - "us-east-1b"
+  - "us-east-1c"
+master_disk_type: gp2
+master_disk_size: 10
 instances:
   - name: front
     count: 1
     labels:
       type: front
       class: fast1
-    instance_type: t2.micro
+    instance_type: m3.medium
     volumes:
       - DeviceName: "/dev/xvda"
         Ebs:
