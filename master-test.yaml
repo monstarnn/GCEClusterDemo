@@ -1,4 +1,5 @@
 name: master-test
+project: kl-demo-1
 zone: asia-east1-a
 instances:
   - name: front
