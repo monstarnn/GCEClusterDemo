@@ -5,6 +5,12 @@
     name: cassandra
     src: https://github.com/monstarnn/test-repo/cassandra
     version: 0.2.1
+  - clusters:
+    - master-test
+    configuration: {}
+    name: cassandra
+    src: https://github.com/monstarnn/cassandra-chart/
+    version: 0.2.1
   name: cassandra
 - charts:
   - clusters:
