@@ -68,7 +68,7 @@
         MemoryLimits: 64Mi
         MemoryRequests: 64Mi
         Name: demo
-        Replicas: 2
+        Replicas: 1
         ServerVersion: 1.1.2
     name: demo-web-server
     src: https://github.com/kuberlab/demo-web-server/Chart
